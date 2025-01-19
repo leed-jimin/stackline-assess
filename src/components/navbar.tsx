@@ -1,5 +1,4 @@
 import React from "react";
-// import svg from './icons/stackline_logo.svg';
 
 const NavBar = () => {
   return (

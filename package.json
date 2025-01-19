@@ -7,10 +7,13 @@
     "dayjs": "^1.11.13",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
     "react-scripts": "5.0.1",
-    "recharts": "^2.15.0"
+    "recharts": "^2.15.0",
+    "redux": "^5.0.1"
   },
   "scripts": {
+    "api": "json-server ./mockDb/db.json -p 3333",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "json-server": "^1.0.0-beta.3",
     "web-vitals": "^4.2.4"
   }
 }

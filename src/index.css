@@ -30,8 +30,8 @@ code {
 .logo {
   background-repeat: no-repeat;
   background-image: url(./icons/stackline_logo.svg);
-  height: 50px;
-  width: 50%;
+  height: 50%;
+  width: 70px;
   overflow: hidden;
   margin-left: 20px
 }
@@ -58,7 +58,7 @@ code {
 
 .card-subtitle {
   font-size: 16px;
-  color: #494949; 
+  color: #c4c4c4; 
 }
 
 .item-card button {
@@ -79,8 +79,8 @@ code {
 
 .button-group {
   text-align: initial;
-  border-top: 1px solid #b4b4b4; 
-  border-bottom: 1px solid #b4b4b4;
+  border-top: 1px solid #d1d1d1; 
+  border-bottom: 1px solid #d1d1d1;
   padding: 10px 0px;
 }
 
@@ -95,7 +95,8 @@ code {
 }
 
 .sales-graph h3 {
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-bottom: 25px;
 }
 
 .graph-wrapper {
