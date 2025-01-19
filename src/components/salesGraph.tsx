@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { SalesData } from '../interfaces/ApiResponse';
-import { centsToDollars } from '../helpers/utils.ts';
+import { centsToDollars } from '../helpers/utils';
 import dayjs from 'dayjs'; 
 
 interface SalesGraphProps {
@@ -9,8 +9,8 @@ interface SalesGraphProps {
 }
 
 const SalesGraph = ({sales}: SalesGraphProps) => {
-  const parseData = (data) => {
-    return data.map((item: SalesData)  => {
+  const parseData = (sales: SalesData[]) => {
+    return sales.map((item: SalesData)  => {
       return {
         weekEnding: item.weekEnding,
         Retail: centsToDollars(item.retailSales),
