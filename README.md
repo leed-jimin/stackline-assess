@@ -15,6 +15,15 @@ Runs the mock db where we can fetch data
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### Redux
+
+I'm not as familiar with redux so I did some quick research and tried to implement in a separate branch.
+
+Try it out if you have time:
+
+### `git checkout redux-maybe`
+### repeat steps from above
+
 ## Enhancements(that I would've added)
 
 - Mobile Responsiveness
