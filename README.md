@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, run(in order):
 
+### `npm install`
 ### `npm run api`
 
 Runs the mock db where we can fetch data
