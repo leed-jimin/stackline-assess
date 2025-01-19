@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import NavBar from './components/navbar.tsx';
 import ItemCard from './components/itemCard.tsx';
 import SalesGraph from './components/salesGraph.tsx';
-import jsonData from './data/stackline_frontend_assessment_data_2021.json'
 
 function App() {
-  // const jsonData;
-  const { image, sales, subtitle, title, tags} = jsonData[0];
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Fetch data from the API and handle errors
+    fetch('http://localhost:3333/data')
+      .then(response => {
+        if (!response.ok) {
+          // Throw an error if the response is not ok (e.g., status 404 or 500)
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData(data[0]);
+      })
+      .catch(err => {
+        alert(err);
+      });
+  }, []);
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  const { title, subtitle, tags, image, sales } = data;
+  
   return (
     <div>
       <NavBar />

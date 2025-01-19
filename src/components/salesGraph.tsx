@@ -30,7 +30,7 @@ const SalesGraph = ({sales}: SalesGraphProps) => {
         <LineChart data={parsedData}>
           <XAxis
             dataKey="weekEnding"
-            tickFormatter={(str) => dayjs(str).format('MMM DD')} // Format the tick labels as "Jan 2025", "Feb 2025", etc.
+            tickFormatter={(str) => dayjs(str).format('MMM DD')}
             interval={4}
           />
           <YAxis />
