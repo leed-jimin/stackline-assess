@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  margin-top: 70px;
+  display: flex;
+}
+
+.component {
+  padding: 20px;
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(1, 1, 97);
+  height: 80px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-image: url(./icons/stackline_logo.svg);
+  height: 50px;
+  width: 50%;
+  overflow: hidden;
+  margin-left: 20px
+}
+
+.item-card {
+  background-color: #fff; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 20%;
+  height: 800px;
+  text-align: center;
+}
+
+.item-card img {
+  width: 100%; /* Makes the image responsive */
+  object-fit: contain; 
+}
+
+.card-title {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #333; 
+}
+
+.card-subtitle {
+  font-size: 16px;
+  color: #494949; 
+}
+
+.item-card button {
+  background-color: white; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 5px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, border-color 0.3s; 
+  margin: 5px 5px;
+}
+
+.item-card button:hover {
+  background-color: #f0f0f0; 
+  border-color: #888; 
+}
+
+.button-group {
+  text-align: initial;
+  border-top: 1px solid #b4b4b4; 
+  border-bottom: 1px solid #b4b4b4;
+  padding: 10px 0px;
+}
+
+.sales-graph {
+  justify-content: flex-end;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-right: 20px;
+}
+
+.sales-graph h3 {
+  margin-left: 10px;
+}
+
+.graph-wrapper {
+  width: 500px;
+  height: 300px;
+}
