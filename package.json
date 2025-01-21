@@ -1,4 +1,5 @@
 {
+  "homepage": "http://leed-jimin.github.io/stackline-assess",
   "name": "stackline-assess",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,8 @@
   "scripts": {
     "api": "json-server ./mockDb/db.json -p 3333",
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0",
     "json-server": "^1.0.0-beta.3",
     "web-vitals": "^4.2.4"
   }
